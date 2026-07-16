@@ -1,5 +1,5 @@
 /* ============================================================
-   Muhammad Arslan | Portfolio — Vanilla JS (no framework)
+   Muhammad Arslan | Portfolio  
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
