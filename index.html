@@ -1,229 +1,215 @@
+<!--
+  Name: Muhammad Arslan
+  Roll No: FA23-BCS-030
+  Class: BSCS 5th Semester (Section A)
+  Course: Web Engineering (CLO-2)
+  Instructor: Mr. Ali Sultan
+  Date: 20 Oct 2025
+-->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Complete HTML Demo">
-    <meta name="author" content="Muhammad Arslan">
-    <link rel="stylesheet" href="style.css">
-    <title>html+css</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Arslan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <header>
-        <h2>Welcome</h2>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
-        <p>
-            This website demonstrates Semantic HTML5 elements,
-            accessibility and responsive web design.
-        </p>
+  <!-- ======= Sidebar ======= -->
+  <header class="sidebar">
+    <img src="images/profile_pick.jpg" alt="Muhammad Arslan profile photo" class="sidebar__avatar">
+    <h1 class="sidebar__name">Muhammad Arslan</h1>
+    <p class="sidebar__role">Web Developer &amp; Flutter App Developer</p>
 
-        <h1> my Intenship first Project</h1>
-        <h2>first tpoics </h2>
+    <ul class="sidebar__socials">
+      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">FB</a></li>
+      <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a></li>
+      <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a></li>
+      <li><a href="https://github.com/Arslan-web-Dev" target="_blank" rel="noopener" aria-label="GitHub">GH</a></li>
+    </ul>
 
-    </header>
-
-    <nav>
-        <a href="#home">home</a>
-        <a href="/about.html" target="_blank">about</a>
-        <a href="/contact.html" target="_blank">conatct</a>
-        <a href="#footer">footer</a>
-
-
+    <nav class="nav" aria-label="Primary">
+      <a href="#hero" class="nav__link">Home</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#skills" class="nav__link">Skills</a>
+      <a href="#projects" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
+      <a href="login.html" class="nav__link nav__link--login">Login</a>
+      <a href="logout.html" class="nav__link nav__link--logout">Logout</a>
     </nav>
+  </header>
 
+  <!-- ======= Main Content ======= -->
+  <main class="main">
 
-    <main>
-        <section id="home">
-            <h1>my Intenship first Project</h1>
-            <h2>my Intenship first Project</h2>
-            <h3>my Intenship first Project</h3>
-            <h4>my Intenship first Project</h4>
-            <h5>my Intenship first Project</h5>
-            <h6>my Intenship first Project</h6>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero__card">
+        <img src="images/profile_pick.jpg" alt="Muhammad_Arslan" class="hero__avatar">
+        <h1>Muhammad Arslan</h1>
+        <p class="hero__typed-line">I'm <span class="typed" data-typed-items="Developer, Designer, Freelancer, Student"></span><span class="cursor">&nbsp;</span></p>
+      </div>
+    </section>
 
-        </section>
+    <!-- About -->
+    <section id="about" class="about container reveal">
+      <h2 class="section-title">About Me</h2>
+      <div class="about__grid">
+        <img src="images/profile_background.jpg" class="about__photo" alt="Muhammad Arslan portrait">
+        <div>
+          <p class="about__lead">
+            I'm Muhammad Arslan, a passionate <strong>Web Developer</strong> focused on building responsive
+            and modern websites. I work with HTML, CSS, JavaScript, and Flutter to create user-friendly web apps.
+          </p>
+          <ul class="about__facts">
+            <li class="reveal-item"><span class="fact-label">Birthday</span> <span>1 February 2003</span></li>
+            <li class="reveal-item"><span class="fact-label">City</span> <span>Vehari, Pakistan</span></li>
+            <li class="reveal-item"><span class="fact-label">Email</span> <span>fa23-bcs-030@cuivehari.edu.pk</span></li>
+            <li class="reveal-item"><span class="fact-label">Freelancer</span> <span>Available</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-        <section>
-            <select name="choise option " choise the option>
+    <!-- Skills -->
+    <section id="skills" class="skills container reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="skill-list">
+        <div class="skill reveal-item">
+          <div class="skill__meta"><span>HTML</span><span>95%</span></div>
+          <div class="skill__track"><div class="skill__bar" data-level="95"></div></div>
+        </div>
+        <div class="skill reveal-item">
+          <div class="skill__meta"><span>CSS</span><span>80%</span></div>
+          <div class="skill__track"><div class="skill__bar" data-level="80"></div></div>
+        </div>
+        <div class="skill reveal-item">
+          <div class="skill__meta"><span>JavaScript</span><span>70%</span></div>
+          <div class="skill__track"><div class="skill__bar" data-level="70"></div></div>
+        </div>
+        <div class="skill reveal-item">
+          <div class="skill__meta"><span>Flutter</span><span>90%</span></div>
+          <div class="skill__track"><div class="skill__bar" data-level="90"></div></div>
+        </div>
+      </div>
+    </section>
 
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-            </select>
+    <!-- Projects -->
+    <section id="projects" class="projects container reveal">
+      <h2 class="section-title">My Work &amp; Projects</h2>
 
+      <article class="project reveal-item">
+        <div class="project__media"><img src="images/html.jpeg" alt="HTML landing page project"></div>
+        <div class="project__body">
+          <h3>HTML Landing Page</h3>
+          <p>HTML is the foundation of every website. It structures all the content you see on a webpage —
+            text, images, and links. In my portfolio, HTML defines the layout and sections, forming the
+            backbone of the entire site.</p>
+        </div>
+      </article>
 
+      <article class="project reveal-item">
+        <div class="project__media"><img src="images/css.jpeg" alt="CSS responsive design project"></div>
+        <div class="project__body">
+          <h3>CSS3 Responsive Design</h3>
+          <p>This portfolio is styled with hand-written CSS to make the design modern and attractive.
+            CSS controls the layout, colors, fonts, and animations of each section, creating a responsive,
+            user-friendly interface on all devices.</p>
+        </div>
+      </article>
 
-        </section>
+      <article class="project reveal-item">
+        <div class="project__media"><img src="images/flutter.jpeg" alt="Flutter mobile app project"></div>
+        <div class="project__body">
+          <h3>Flutter Mobile App</h3>
+          <p>This section showcases projects developed using Flutter, Google's framework for building
+            cross-platform apps. With a single codebase I can create fast, responsive applications for
+            Android, iOS, web, and desktop.</p>
+        </div>
+      </article>
 
+      <article class="project reveal-item">
+        <div class="project__media"><img src="images/JavaScript.jpeg" alt="JavaScript interactivity project"></div>
+        <div class="project__body">
+          <h3>JavaScript</h3>
+          <p>JavaScript adds interactivity and logic to web pages. It enables animations, dynamic content,
+            and user interaction throughout this portfolio — including this page's typed text, scroll
+            reveals, and form validation, all written without any framework.</p>
+        </div>
+      </article>
+    </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact container reveal">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact__intro">You can reach me at <strong>fa23-bcs-030@cuivehari.edu.pk</strong> or connect via the social links in the sidebar.</p>
 
-        <section>
-            <label for=" email">Email</label>
-            <input id="email" type="email">
-            <br>
+      <form class="form" novalidate>
+        <div class="field field--3">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required>
+          <span class="field__hint">Please enter your first name.</span>
+        </div>
 
-            <label for="passowrd">passowrd</label>
-            <input id="passowrd" type="passoword" minlength="8">
-            <br>
-            <label for="contact">contact</label>
-            <input id="contact" type="text">
-            <br>
-            <label for="age">age</label>
-            <input type="number" min="18" max="60">
-            <br>
-            <button>Submit</button>
+        <div class="field field--3">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required>
+          <span class="field__hint">Please enter your last name.</span>
+        </div>
 
+        <div class="field field--4">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+          <span class="field__hint">Please choose a username.</span>
+        </div>
 
+        <div class="field field--3">
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required>
+          <span class="field__hint">Please provide a valid city.</span>
+        </div>
 
+        <div class="field field--3">
+          <label for="state">State</label>
+          <select id="state" name="state" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Punjab</option>
+            <option>Sindh</option>
+            <option>KPK</option>
+            <option>Balochistan</option>
+          </select>
+          <span class="field__hint">Please select a state.</span>
+        </div>
 
-        </section>
+        <div class="field field--3">
+          <label for="zip">Zip</label>
+          <input type="text" id="zip" name="zip" required>
+          <span class="field__hint">Please provide a valid zip.</span>
+        </div>
 
-        <section>
-            <ol>
-                <li> boooks </li>
-                <li> class </li>
-                <li> section </li>
-                <li>batch </li>
-            </ol>
+        <div class="form__submit">
+          <button class="btn" type="submit">Submit Form</button>
+        </div>
+      </form>
+    </section>
 
-        </section>
-        <section>
-            </ul>
-            <li> boooks </li>
-            <li> class </li>
-            <li> section </li>
-            <li>batch </li>
-            </ul>
-
-
-
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo87ae1JykpC9TanEsNbcSggAqYY9HNscxr3dsMRDeNw&s=10"
-                alt="tages_picks">
-        </section>
-
-        <table>
-
-            <thead>my information </thead>
-            <tbody>
-                <tr>
-                    <th>id </th>
-                    <th>name </th>
-                    <th>section </th>
-                    <th>rollnumber </th>
-                    <th>batch </th>
-                </tr>
-                <tr >
-                    <td>1</td>
-                    <td>Arslan</td>
-                    <td>A</td>
-                    <td>030</td>
-                    <td>fa23</td>
-
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Awais</td>
-                    <td>A</td>
-                    <td>022</td>
-                    <td>fa23</td>
-
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Ahad</td>
-                    <td>A</td>
-                    <td>046</td>
-                    <td>fa23</td>
-
-                </tr>
-
-
-                <tr>
-                    <td>1</td>
-                    <td>Arslan</td>
-                    <td>A</td>
-                    <td>030</td>
-                    <td>fa23</td>
-
-                </tr>
-            </tbody>
-
-        </table>
-
-
-        <section>
-            <!-- Form which will send a GET request to the current URL -->
-            <form method="get">
-                <label>
-                    Name:
-                    <input name="submitted-name" autocomplete="name" />
-                </label>
-                <button>Save</button>
-            </form>
-
-            <!-- Form which will send a POST request to the current URL -->
-            <form method="post">
-                <label>
-                    Name:
-                    <input name="submitted-name" autocomplete="name" />
-                </label>
-                <button>Save</button>
-            </form>
-
-            <form method="post">
-                <fieldset>
-                    <legend>Do you agree to the terms?</legend>
-                    <label><input type="radio" name="radio" value="yes" /> Yes</label>
-                    <label><input type="radio" name="radio" value="no" /> No</label>
-                </fieldset>
-
-
-
-                <form method="get">
-                    <label>
-                        Name:
-                        <input name="submitted-name" autocomplete="name" />
-                    </label>
-                    <button>Save</button>
-                </form>
-
-                <!-- Form which will send a POST request to the current URL -->
-                <form method="post">
-                    <label>
-                        Name:
-                        <input name="submitted-name" autocomplete="name" />
-                    </label>
-                    <button>Save</button>
-                </form>
-
-                <form method="post">
-                    <fieldset>
-                        <legend>Do you agree to the terms?</legend>
-                        <label><input type="radio" name="radio" value="yes" /> Yes</label>
-                        <label><input type="radio" name="radio" value="no" /> No</label>
-                    </fieldset>
-                </form>
-            </form>
-        </section>
-
-
-    </main>
-
-    <footer id="footer">
-        <p>
-            <strong>
-                @2026 designed by Muhammad Arslan
-            </strong>
-
-
-        </p>
+    <!-- Footer -->
+    <footer class="site-footer reveal">
+      <ul class="site-footer__socials">
+        <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">FB</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">IG</a></li>
+        <li><a href="https://github.com/Arslan-web-Dev" target="_blank" rel="noopener" aria-label="GitHub">GH</a></li>
+        <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">IN</a></li>
+      </ul>
+      <small>&copy; 2025 Muhammad Arslan Portfolio | All Rights Reserved</small>
     </footer>
+  </main>
 
+  <script src="script.js"></script>
 </body>
-
 </html>
