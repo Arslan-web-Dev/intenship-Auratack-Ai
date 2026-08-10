@@ -29,8 +29,35 @@
     <nav>
         <a href="index.html">home</a>
         <a href="about.html" target="_blank">about</a>
+        <a href="#home" target="_blank">Home</a>
         <a href="contact.html" target="_blank">conatct</a>
+        <a href="dashboard.html" target="_blank">dashboard </a>
+        
         
 
 
     </nav>
+
+
+
+    <section class="Contact_info">
+        <h2>Contact Information</h2>
+        <p>Please enter your basic information below.</p>
+
+        <form action="#" method="post">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required> <br>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" minlength="8" required> <br>
+
+            <label for="contact">Contact</label>
+            <input id="contact" name="contact" type="tel"><br>
+
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="18" max="60"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
