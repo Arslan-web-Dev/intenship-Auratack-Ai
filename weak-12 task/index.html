@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Arslan's first internship HTML and CSS project.">
+    <meta name="author" content="Muhammad Arslan">
+    <title>Internship First Project | Muhammad Arslan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="nav_section ">
+        <a href="#home" target="_blank">Home</a>
+        <a href="about.html" target="_blank">About</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="dashboard.html" target="_blank">dashboard </a>
+        <a href="#footer">Footer</a>
+    </nav>
+    <header class="Heading_section">
+        <h2>HTML Heading Levels</h2>
+
+    
+       
+        <h3>My Internship First Project</h3>
+        <h4>My Internship First Project</h4>
+        <h5>My Internship First Project</h5>
+        <h6>My Internship First Project</h6>
+    </header>
+
+    <section class="selection ">
+        <h2>Choose an Option</h2>
+
+        <label for="choice">Select your option:</label>
+
+        <select id="choice" name="choice">
+            <option value="">Select an option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+        </select>
+    </section>
+
+    <section class="Contact_info">
+        <h2>Contact Information</h2>
+        <p>Please enter your basic information below.</p>
+
+        <form action="#" method="post">
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required> <br>
+
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" minlength="8" required> <br>
+
+            <label for="contact">Contact</label>
+            <input id="contact" name="contact" type="tel"><br>
+
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" min="18" max="60"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="link_section">
+        <h2>Learning Resource</h2>
+        <p>Visit W3Schools to learn more about HTML and CSS.</p>
+
+        <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">
+            Visit W3Schools
+        </a>
+    </section>
+    <section class="list_section">
+
+        <section class="section">
+
+            <h2>Ordered List</h2>
+
+            <ol>
+                <li>Books</li>
+                <li>Class</li>
+                <li>Section</li>
+                <li>Batch</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>Unordered List</h2>
+
+            <ul>
+                <li>Books</li>
+                <li>Class</li>
+                <li>Section</li>
+                <li>Batch</li>
+            </ul>
+        </section>
+    </section>
+
+    <section class="image_section">
+        <h2>Image</h2>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo87ae1JykpC9TanEsNbcSggAqYY9HNscxr3dsMRDeNw&s=10"
+            alt="Example image for HTML practice">
+    </section>
+
+    <section class="section">
+        <h2>Student Information</h2>
+
+        <table>
+            <caption>Student Information</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Section</th>
+                    <th scope="col">Roll Number</th>
+                    <th scope="col">Batch</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Arslan</td>
+                    <td>A</td>
+                    <td>030</td>
+                    <td>FA23</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Awais</td>
+                    <td>A</td>
+                    <td>022</td>
+                    <td>FA23</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Ahad</td>
+                    <td>A</td>
+                    <td>046</td>
+                    <td>FA23</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="section">
+        <h2>Form Examples</h2>
+
+        <form action="#" method="get">
+            <label for="get-name">Name</label>
+            <input id="get-name" name="name" type="text" autocomplete="name">
+            <button type="submit">Save</button>
+        </form>
+
+        <form action="#" method="post">
+            <label for="post-name">Name</label>
+            <input id="post-name" name="name" type="text" autocomplete="name">
+            <button type="submit">Save</button>
+        </form>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Do you agree to the terms?</legend>
+
+                <label>
+                    <input type="radio" name="agreement" value="yes">
+                    Yes
+                </label>
+
+                <label>
+                    <input type="radio" name="agreement" value="no">
+                    No
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <p class="footer__text">
+            <strong>&copy; 2026 Designed by Muhammad Arslan</strong>
+        </p>
+    </footer>
+
+</body>
+
+</html>
