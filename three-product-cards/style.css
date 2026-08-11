@@ -57,7 +57,7 @@ nav a {
 .product-card {
     flex: 1;
     background: white;
-    border: 1px solid #ddd;
+    border: 1px solid #dbdbdb;
     border-radius: 14px;
     overflow: hidden;
     padding-bottom: 15px;
