@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+.main {
+    padding: 25px;
+}
+
+
+.dashboard{
+    
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    
+
+
+}
+
+.sidebar {
+    background: #111;
+    color: white;
+    padding: 25px 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 35px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.topbar {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.profile {
+    background: #111;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+
+.stat-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+.stat-card h2 {
+    margin-top: 10px;
+}
+
+
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.table-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+.form-box {
+    background: rgb(244, 240, 240);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e6dfdf;
+}
+
+
+.sidebar a:hover {
+    background: #333;
+}
+
+
+
+
+table {
+    width: 100%;
+   
+    margin-top: 20px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #f1f1f1;
+}
+
+
+
+.form-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #f6efef;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+button {
+    background: #111;
+    color: white;
+
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 1000px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        padding: 20px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+}

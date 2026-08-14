@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #111;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    min-height: 80vh;
+    padding: 70px 8%;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+
+.hero-intro {
+    font-weight: 100;
+}
+
+.hero img {
+    width: 30%;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+
+
+.btn {
+    display: inline-block;
+    padding: 11px 20px;
+    background: #111;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+section {
+    padding: 60px ;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.about img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+
+}
+
+
+
+.food-card {
+    display: grid;
+    border: 1px solid  whitesmoke;
+    gap: 25px;
+}
+
+.food-card {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+.food-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+
+}
+
+.food-card h3,
+.food-card p,
+.food-card p {
+    margin-top: 10px;
+}
+
+.offers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.offers div {
+    flex: 1;
+    padding: 18px;
+    border: 1px solid #c3baba;
+    border-radius: 10px; 
+}
+
+.contact {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.contact div {
+    flex: 1;
+    padding: 18px;
+    border: 1px solid #c3baba;
+    border-radius: 10px;
+}
+
+
+
+
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+
+
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .food-card {
+        padding: 40px 20px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .food-card {
+        grid-template-columns: 1fr;
+    }
+}

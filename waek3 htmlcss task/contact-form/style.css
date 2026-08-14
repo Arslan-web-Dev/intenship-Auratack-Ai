@@ -56,9 +56,6 @@ textarea {
     font: inherit;
 }
 
-textarea {
-    resize: vertical;
-}
 
 button {
     width: 100%;

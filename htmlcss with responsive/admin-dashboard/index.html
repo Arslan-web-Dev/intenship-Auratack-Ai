@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="dashboard">
+
+    <aside class="sidebar">
+        <h2>Admin Panel</h2>
+
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Products</a>
+            <a href="#">Orders</a>
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back, Admin</p>
+            </div>
+            <div class="profile">Admin</div>
+        </header>
+
+        <section class="stats">
+            <div class="stat-card">
+                <p>Total Users</p>
+                <h2>1,500</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Total Products</p>
+                <h2>385</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Total Orders</p>
+                <h2>1,240</h2>
+            </div>
+
+            <div class="stat-card">
+                <p>Total Revenue</p>
+                <h2>$25,800</h2>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="table-box">
+                <h2>Recent Orders</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Status</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Ali</td>
+                            <td>Laptop</td>
+                            <td>Completed</td>
+                            <td>800</td>
+                        </tr>
+
+                        <tr>
+                            <td>02</td>
+                            <td>Ahmed</td>
+                            <td>Phone</td>
+                            <td>Pending</td>
+                            <td>500</td>
+                        </tr>
+
+                        <tr>
+                            <td>03</td>
+                            <td>Arslan</td>
+                            <td>Headphones</td>
+                            <td>Completed</td>
+                            <td>120</td>
+                        </tr>
+
+                        <tr>
+                            <td>04</td>
+                            <td>Awais</td>
+                            <td>Watch</td>
+                            <td>Pending</td>
+                            <td>200</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-box">
+                <h2>Add Product</h2>
+                <form>
+                    <label>Product Name</label>
+                    <input type="text" placeholder="Enter product name">
+
+                    <label>Category</label>
+                    <input type="text" placeholder="Enter category">
+
+                    <label>Price</label>
+                    <input type="number" placeholder="Enter price">
+
+                    <label>Quantity</label>
+                    <input type="number" placeholder="Enter quantity">
+
+                    <button type="submit">Add Product</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</section>
+
+</body>
+</html>
